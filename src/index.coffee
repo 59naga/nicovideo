@@ -160,6 +160,7 @@ class Nicovideo
       if addURL and serviceURL
         for item in items
           item.url?= serviceURL + item.cmsid
+          item.url= item.url.replace 'comic/_comic','comic/'
 
       {total,items}
 

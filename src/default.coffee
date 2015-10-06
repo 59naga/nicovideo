@@ -22,13 +22,13 @@ serviceURLs=
     'http://www.nicovideo.jp/watch/'
 
   illust:
-    'http://seiga.nicovideo.jp/illust/'
+    'http://seiga.nicovideo.jp/seiga/'
 
   manga:
-    'http://seiga.nicovideo.jp/manga/'
+    'http://seiga.nicovideo.jp/comic/'
 
   book:
-    'http://seiga.nicovideo.jp/book/'
+    'http://seiga.nicovideo.jp/watch/'
 
   live:
     'http://live.nicovideo.jp/watch/'

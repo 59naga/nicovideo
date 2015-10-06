@@ -100,7 +100,7 @@ nicovide.illust('初音ミク',options)
   //       "title": "ピンクみく様「カメラマンさん！そこから動いちゃだめよ＞＜」",
   //       "update_time": "2015-10-06 01:57:38",
   //       "view_counter": 3,
-  //       "url": "http://seiga.nicovideo.jp/illust/im5243771"
+  //       "url": "http://seiga.nicovideo.jp/seiga/im5243771"
   //     },
   //     {...more 99 items ...}
   //   ]
@@ -122,22 +122,25 @@ nicovide.manga('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
-  //   "total": 77213,
+  //   "total": 106,
   //   "items": [
   //     {
-  //       "_rowid": 0,
-  //       "cmsid": "im5243771",
-  //       "comment_counter": 0,
-  //       "description": "たまにはこういうのもあってもいいかな.....（。≧ω≦）ﾉ<br>ピンクみく様「なくていいです＞＜」<br>投稿してからベッドにパンツおいてるのにきづいた......",
-  //       "last_comment_time": "1970-01-01 09:00:00",
-  //       "mylist_counter": 2,
-  //       "start_time": "2015-10-06 01:53:23",
-  //       "tags": "VOCALOID 初音ミク MMD ピンクみく様 生け花ミクさん",
-  //       "thumbnail_url": "http://lohas.nicoseiga.jp/thumb/5243771z",
-  //       "title": "ピンクみく様「カメラマンさん！そこから動いちゃだめよ＞＜」",
-  //       "update_time": "2015-10-06 01:57:38",
-  //       "view_counter": 3,
-  //       "url": "http://seiga.nicovideo.jp/illust/im5243771"
+  //       _rowid: 0,
+  //       author: 'ド底辺ケツモドキ',
+  //       channel_id: false,
+  //       cmsid: '_comic18156',
+  //       comment_counter: 6,
+  //       description: '',
+  //       is_official: 0,
+  //       last_comment_time: '2015-10-03 23:23:26',
+  //       mylist_counter: 0,
+  //       start_time: '2015-10-03 12:18:43',
+  //       tags: 'VOCALOID 初音ミク 鏡音リン ４コマ 自殺 首吊り',
+  //       thumbnail_url: 'http://lohas.nicoseiga.jp/thumb/mg_thumb/0q',
+  //       title: '初音ミクの自殺',
+  //       update_time: '2015-10-05 17:18:05',
+  //       view_counter: 592,
+  //       url: 'http://seiga.nicovideo.jp/comic/18156' }
   //     },
   //     {...more 99 items ...}
   //   ]
@@ -182,7 +185,7 @@ nicovide.book('初音ミク',options)
   //       "thumbnail_url": "https://nb.nimg.jp//book/static/img/book/000/282/953/dYurthsYtOGQPpSv.150x150.jpg?1429102917",
   //       "title": "初音ミクはなぜ世界を変えたのか？",
   //       "view_counter": 10,
-  //       "url": "http://seiga.nicovideo.jp/book/bk282953"
+  //       "url": "http://seiga.nicovideo.jp/watch/bk282953"
   //     },
   //     {...more 14 items ...}
   //   ]

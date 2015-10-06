@@ -1,6 +1,6 @@
 {
   "name": "nicovideo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "search.niconico.jp API wrapper",
 
   "main": "lib",
@@ -10,9 +10,6 @@
     
     "start": "jasminetea --file index.coffee --watch",
     "test": "jasminetea --file index.coffee --lint --cover --report",
-
-    "localhost": "zuul test --ui jasmine2 --local 59798 --open",
-    "test-cloud": "zuul test --concurrency 1",
 
     "prebuild": "$(opc bower opc-scripts.build) | exorcist $(opc bower name).js.map -b . > $(opc bower name).js",
     "build": "$(opc bower opc-scripts.uglify)",
