@@ -27,6 +27,15 @@ $ bower install nicovideo --save
 </script>
 ```
 
+### Via rawgit.com (the simple way)
+
+```
+<script src="https://cdn.rawgit.com/59naga/nicovideo/889a3cf201abf269a9117d03b58dfef2d5ee6261/nicovideo.min.js"></script>
+<script>
+  console.log(nicovideo); //object
+</script>
+```
+
 # コンテンツ検索API
 
 * `query`には AND,OR,NOTなどの演算子が使用できます。
