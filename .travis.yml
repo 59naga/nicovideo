@@ -32,6 +32,9 @@ deploy:
     secure: ukc4cA85hWpGaYg4aKyI9kPsovFU3V0Y6mclBQJvOGXCiU/h/+OUWy/BjmyJ93LA+pS7GykNPJYciYlHELRdBNTEMBhlrINhuv9EfFONQK/BlW5/uyuy1p/DurpippKdlxp9hDhd9jSAqMpuuXb44QFOolHOz0BmiU5HQh41jDaYDmPBopgr86Hw+BhCWU6v5Q7+lJ1eNxAdUis4mfsdmzQ/XOHRopfs0kbYXi8h72Kg5Y9GmBHcr0+lnDL+ECWVD/ZgjyujkNe3pIe42iQnLYTAfRba9NqeAx+syhgFXXGLW/DfZJlGvXf6bCRvwrK8sIRBWGyS4I5d9jzPgcaETA6pLBUbZjWEFNPjOah3CqJzCfZIwCttvrLBCcczOJ0Sq6zgRnO07mCSLs36TPl+6t6bQS8e7Ces3VpeNq3Mdq0VN3BpDSKUAofvToT8QQoG1PZ1CRyX9P6C+UEkne8zyf9ej0LxPHFYrlp+OmcK0wYUnn6PCa9QuzJwBYoJtOTmTlLS87Kfko9M4y2AxRVEPoMymO5cns7yg1Ibjlhwcs0WZRkC/fkt12RG+bIex2Q3zfXJ8nG4I2Eard+skRNcOKvR01VF40294h49O3BH+EvATv3QU+Nb9ltpDhKiVFxBAsWnuWfeNRRRgOQ9WS3BcK59DpbYeLhTkysU19w0VhU=
 
 # Cloud testing
-after_deploy:
-  - npm install
-  - npm run test-cloud
+# after_deploy:
+#   - npm install
+#   - npm run test-cloud
+#
+# Disabled(due to Mixed Content):
+#   http://qiita.com/59naga/items/b7a6c5674196181798a6#%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%86%E3%82%B9%E3%83%88 
