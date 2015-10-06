@@ -1,4 +1,5 @@
 # Dependencies
+require('es6-promise').polyfill()
 axios= require 'axios'
 
 # Environment

@@ -1,7 +1,5 @@
 # Nicovideo [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis] [![Coverage Status][coveralls-image]][coveralls]
 
-[![Sauce Test Status][sauce-image]][sauce]
-
 > ニコニコの検索APIラッパー
 
 ## Installation
@@ -532,10 +530,6 @@ nicovide.newsTag()
   // }
 });
 ```
-
-# Related projects
-* __nicovideo__
-* [other-project](https://github.com/59naga/other-project/)
 
 License
 ---
