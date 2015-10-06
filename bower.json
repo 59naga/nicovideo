@@ -1,0 +1,47 @@
+{
+  "name": "nicovideo",
+  "description": "Description",
+
+  "main": [
+    "nicovideo.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "*.coffee",
+    "src",
+    "test"
+  ],
+
+  "opc-scripts": {
+    "build": [
+      "browserify ./src",
+      "--transform coffeeify",
+      "--standalone nicovideo",
+      "--extension .coffee",
+      "--debug"
+    ],
+    "uglify": [
+      "uglifyjs",
+
+      "nicovideo.js",
+      "--in-source-map",
+      "nicovideo.js.map",
+
+      "--mangle",
+      "--compress",
+
+      "--output",
+      "nicovideo.min.js",
+      "--source-map",
+      "nicovideo.min.js.map"
+     ]
+  },
+
+  "authors": [
+    "59naga <i59naga@icloud.com>"
+  ],
+  "homepage": "https://github.com/59naga/nicovideo",
+  "license": "MIT"
+}
