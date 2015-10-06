@@ -29,7 +29,7 @@ $ bower install nicovideo --save
 
 ### Via rawgit.com (the simple way)
 
-```
+```html
 <script src="https://cdn.rawgit.com/59naga/nicovideo/889a3cf201abf269a9117d03b58dfef2d5ee6261/nicovideo.min.js"></script>
 <script>
   console.log(nicovideo); //object
