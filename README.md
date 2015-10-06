@@ -227,41 +227,6 @@ nicovide.live('初音ミク',options)
 });
 ```
 
-## live(query,options) -> Promise({total,items})
-
-ニコニコ生放送を検索して、最大１００件を非同期で返します。
-
-```js
-var nicovideo= require('nicovideo');
-var options= {};
-
-nicovide.live('初音ミク',options)
-.catch(console.error)
-.then(function(result){
-  console.log(result);
-  // {
-  //   "total": 1600,
-  //   "items": [
-  //     {
-  //       "_rowid": 0,
-  //       "author": false,
-  //       "channel_id": 2606161,
-  //       "cmsid": "lv237577691",
-  //       "comment_counter": 0,
-  //       "description": "初音ミクのコスプレシンガーとしてメディアで話題と注目を集めるかたわら、前代未聞のニューハーフカリスマ花嫁モデルとしても活躍中の麻倉ケイトがお送りする近未来型トーク番組！\r\n\r\nゲスト：西村梨絵",
-  //       "start_time": "2015-10-27 21:00:00",
-  //       "tags": "一般(その他) 麻倉ケイト 大阪ドロット ニューハーフ シンガーソングライター 初音ミク コスプレ ビューティー 一般",
-  //       "thumbnail_url": "http://nl.simg.jp/img/a247/740805.4fc16f.jpg",
-  //       "title": "麻倉ケイトのありのままで　第18回",
-  //       "view_counter": 0,
-  //       "url": "http://live.nicovideo.jp/watch/lv237577691"
-  //     },
-  //     {...more 99 items ...}
-  //   ]
-  // }
-});
-```
-
 ## channel(query,options) -> Promise({total,items})
 
 ニコニコチャンネルを検索して、最大１００件を非同期で返します。
