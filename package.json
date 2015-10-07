@@ -1,6 +1,6 @@
 {
   "name": "nicovideo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "search.niconico.jp API wrapper",
 
   "main": "lib",

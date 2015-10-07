@@ -40,6 +40,10 @@ defaultFields= [
   'length_seconds'
 
   # 生放送コンテンツ検索
+  'community_id'
+  'community_icon'
+  'open_time'
+  'end_time'
   'score_timeshift_reserved'
   'provider_type'
   'channel_id'
