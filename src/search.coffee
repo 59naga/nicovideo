@@ -209,9 +209,13 @@ class Search
     # タグ -> 正規化／配列化
     item.tags= item.tags.replace(/&amp;/g,'&').split ' ' if item.tags?.replace
 
-    # サムネイル -> 拡大（春画表示）
+    # イラストサムネイル -> 拡大（春画表示）
     if item.thumbnail_url?.replace
       item.thumbnail_url= item.thumbnail_url.replace /z$/,'i'
+
+    # 電子書籍サムネイル -> 拡大
+    if item.thumbnail_url?.replace
+      item.thumbnail_url= item.thumbnail_url.replace '.150x150.jpg','.410x410.jpg'
 
     # ニュース -> 正規化
     if item.thumbnail_key

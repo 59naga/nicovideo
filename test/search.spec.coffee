@@ -84,7 +84,7 @@ describe '.search',->
         expect(item.title).not.toMatch '&amp;'
         expect(item.tags.join()).not.toMatch '&amp;'
         expect(item.url).toMatch urlPrefixRegExp
-        expect(item.thumbnail_url).toBeTruthy()
+        expect(item.thumbnail_url).toMatch '.410x410.jpg'
 
       done()
 
