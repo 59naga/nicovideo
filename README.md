@@ -41,7 +41,9 @@ $ bower install nicovideo --save
 # コンテンツ検索API
 
 * `query`には AND,OR,NOTなどの演算子が使用できます。 [クエリ文字列仕様][1]を参照
-* `options`はPOST送信する`query`以外のパラメータです。未指定の場合は最大件数・最大フィールド数で取得を試みます。
+* `options`はPOST送信する`query`以外のパラメータです。未指定の場合は最大件数（`options.from=0`,`options.size=100`）・最大フィールド数で取得を試みます。
+* ニコニコニュース以外は、コンテンツへのURLを自動で付与します。
+* サイムネイル画像は拡大可能であれば、そのURLに差し替えます。
 
 [1]: http://search.nicovideo.jp/docs/api/contest.html#toc1
 

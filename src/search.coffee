@@ -148,7 +148,14 @@ class Search
     request.from?= 0
     request.size?= 100
 
-    request.search?= ['title','body','caption','tags']
+    request.search?= ['title','description','body','caption','tags']
+
+    # 'description'が使用できない
+    isBook= request.service[0] in ['book']
+    if isBook
+      request.search= request.search?.filter (name)->
+        name isnt 'description'
+
     request.filters?= []
 
     request.join?= defaultFields
