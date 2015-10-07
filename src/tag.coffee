@@ -5,11 +5,6 @@ axios= require 'axios'
 api= 'http://api.search.nicovideo.jp/api/tag/'
 
 class Tag
-  news: (query,request={})->
-    request.service= ['news']
-
-    @search query,request
-
   videoTag: (query,request={})->
     request.service= ['tag_video']
 

@@ -138,6 +138,11 @@ class Search
 
     @search query,request
 
+  news: (query,request={})->
+    request.service= ['news']
+
+    @search query,request
+  
   search: (query,request={},normalize=yes)->
     throw new Error 'query is not defined' unless query?
 

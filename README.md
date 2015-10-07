@@ -51,8 +51,7 @@ $ bower install nicovideo --save
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.video('初音ミク',options)
-.catch(console.error)
+nicovideo.video('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -77,7 +76,8 @@ nicovide.video('初音ミク',options)
   //     {...more 99 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## illust(query,options) -> Promise({total,items})
@@ -89,8 +89,7 @@ nicovide.video('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.illust('初音ミク',options)
-.catch(console.error)
+nicovideo.illust('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -114,7 +113,8 @@ nicovide.illust('初音ミク',options)
   //     {...more 99 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## manga(query,options) -> Promise({total,items})
@@ -126,8 +126,7 @@ nicovide.illust('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.manga('初音ミク',options)
-.catch(console.error)
+nicovideo.manga('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -154,7 +153,8 @@ nicovide.manga('初音ミク',options)
   //     {...more 99 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## book(query,options) -> Promise({total,items})
@@ -165,8 +165,7 @@ nicovide.manga('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.book('初音ミク',options)
-.catch(console.error)
+nicovideo.book('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -199,7 +198,8 @@ nicovide.book('初音ミク',options)
   //     {...more 14 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## live(query,options) -> Promise({total,items})
@@ -210,8 +210,7 @@ nicovide.book('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.live('初音ミク',options)
-.catch(console.error)
+nicovideo.live('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -234,7 +233,8 @@ nicovide.live('初音ミク',options)
   //     {...more 99 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## channel(query,options) -> Promise({total,items})
@@ -245,8 +245,7 @@ nicovide.live('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.channel('初音ミク',options)
-.catch(console.error)
+nicovideo.channel('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -266,7 +265,8 @@ nicovide.channel('初音ミク',options)
   //     {...more 14 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## channelarticle(query,options) -> Promise({total,items})
@@ -277,8 +277,7 @@ nicovide.channel('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.channelarticle('初音ミク',options)
-.catch(console.error)
+nicovideo.channelarticle('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -294,7 +293,8 @@ nicovide.channelarticle('初音ミク',options)
   //     {...more 99 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## news(query,options) -> Promise({total,items})
@@ -305,8 +305,7 @@ nicovide.channelarticle('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.news('初音ミク',options)
-.catch(console.error)
+nicovideo.news('初音ミク',options)
 .then(function(result){
   console.log(result);
   // {
@@ -327,7 +326,8 @@ nicovide.news('初音ミク',options)
   //     {...more 99 items ...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 # 関連タグ検索API
@@ -345,8 +345,7 @@ nicovide.news('初音ミク',options)
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.videoTag()
-.catch(console.error)
+nicovideo.videoTag()
 .then(function(result){
   console.log(result);
   // {
@@ -360,7 +359,8 @@ nicovide.videoTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## illustTag(query,options) -> Promise({total,items})
@@ -371,8 +371,7 @@ nicovide.videoTag()
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.illustTag()
-.catch(console.error)
+nicovideo.illustTag()
 .then(function(result){
   console.log(result);
   // {
@@ -386,7 +385,8 @@ nicovide.illustTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## mangaTag(query,options) -> Promise({total,items})
@@ -397,8 +397,7 @@ nicovide.illustTag()
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.mangaTag()
-.catch(console.error)
+nicovideo.mangaTag()
 .then(function(result){
   console.log(result);
   // {
@@ -412,7 +411,8 @@ nicovide.mangaTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## bookTag(query,options) -> Promise({total,items})
@@ -423,8 +423,7 @@ nicovide.mangaTag()
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.bookTag()
-.catch(console.error)
+nicovideo.bookTag()
 .then(function(result){
   console.log(result);
   // {
@@ -438,7 +437,8 @@ nicovide.bookTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## liveTag(query,options) -> Promise({total,items})
@@ -449,8 +449,7 @@ nicovide.bookTag()
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.liveTag()
-.catch(console.error)
+nicovideo.liveTag()
 .then(function(result){
   console.log(result);
   // {
@@ -464,7 +463,8 @@ nicovide.liveTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## channelTag(query,options) -> Promise({total,items})
@@ -475,8 +475,7 @@ nicovide.liveTag()
 var nicovideo= require('nicovideo');
 var options= {};
 
-nicovide.channelTag()
-.catch(console.error)
+nicovideo.channelTag()
 .then(function(result){
   console.log(result);
   // {
@@ -490,7 +489,8 @@ nicovide.channelTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## channelarticleTag(query,options) -> Promise({total,items})
@@ -500,8 +500,7 @@ nicovide.channelTag()
 ```js
 var nicovideo= require('nicovideo');
 
-nicovide.channelarticleTag()
-.catch(console.error)
+nicovideo.channelarticleTag()
 .then(function(result){
   console.log(result);
   // {
@@ -515,7 +514,8 @@ nicovide.channelarticleTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
 
 ## newsTag(query,options) -> Promise({total,items})
@@ -525,8 +525,7 @@ nicovide.channelarticleTag()
 ```js
 var nicovideo= require('nicovideo');
 
-nicovide.newsTag()
-.catch(console.error)
+nicovideo.newsTag()
 .then(function(result){
   console.log(result);
   // {
@@ -540,8 +539,210 @@ nicovide.newsTag()
   //     {...more 99 items...}
   //   ]
   // }
-});
+})
+.catch(console.error);
 ```
+
+## vita(apiName,params,axiosOptions) -> Promise(data)
+
+`CORS`に抵触するため、NodeJSでのみ利用可能なことに注意して下さい。
+
+> `params`の詳細は[ニコニコAPIリストwiki - Vita API 一覧](http://www59.atwiki.jp/nicoapi/pages/24.html)を確認してください。
+
+```js
+var nicovideo= require('nicovideo');
+
+nicovideo.vita('liveInfo',{v:'lv237721545'})
+.then(function(result){
+  console.log(result);
+  // {
+  //   "nicolive_video_response": {
+  //     "video_info": {
+  //       "video": {
+  //         "id": "lv237721545",
+  //         "title": "ふえいふ暗",
+  //         "description": "ノイズフィルターが届いたので若干音質が向上しました、ので忍者殺す\n\n今回の目標\n\n・錬成を活用する\n・クラス変更を活用する\n\n・主人公をまともに使う\n\n・カミラさんを強くする（弱いらしい）\n\n\n\nSE　ハード初見　暗夜\n\n白夜はクリア",
+  //         "user_id": "270219",
+  //         "open_time": "2015-10-07 20:03:49",
+  //         "start_time": "2015-10-07 20:03:56",
+  //         "end_time": "2015-10-07 20:33:56",
+  //         "provider_type": "community",
+  //         "related_channel_id": "",
+  //         "_currentstatus": "closed",
+  //         "hidescore_online": "0",
+  //         "hidescore_comment": "0",
+  //         "community_only": "0",
+  //         "channel_only": "0",
+  //         "view_counter": "9",
+  //         "comment_count": "0",
+  //         "_timeshift_limit": "7",
+  //         "_ts_archive_released_time": "",
+  //         "_use_tsarchive": "0",
+  //         "_ts_archive_start_time": "",
+  //         "_ts_archive_end_time": "",
+  //         "_ts_view_limit_num": "1",
+  //         "_ts_is_endless": "0",
+  //         "_ts_reserved_count": "0",
+  //         "timeshift_enabled": "0",
+  //         "is_hq": "0"
+  //       },
+  //       "community": {
+  //         "id": "1687166",
+  //         "name": "麺の惑星",
+  //         "description": "　クリア済み\nPortal（PC）\n伝説のオウガバトル（SS）\nアンリミテッド・サガ（PS2）（アーミック・ルビィ・ジュディ編）\nタクティクス・オウガ（SS）\nファイアーエムブレム 新・暗黒竜と光の剣 （DS）\nファイアーエムブレム 新・紋章の謎（DS）\nファイアーエムブレム聖戦の系譜\nスーパーロボット大戦K",
+  //         "public": "1",
+  //         "global_id": "co1687166",
+  //         "user_count": "68",
+  //         "level": "13",
+  //         "thumbnail": "http://icon.nimg.jp/community/168/co1687166.jpg?1439118150",
+  //         "thumbnail_small": "http://icon.nimg.jp/community/s/168/co1687166.jpg?1439118150"
+  //       },
+  //       "livetags": {
+  //         "category": {
+  //           "livetag": "ゲーム"
+  //         },
+  //         "free": {
+  //           "livetag": "ファイアーエムブレム"
+  //         }
+  //       }
+  //     },
+  //     "@status": "ok"
+  //   }
+  // }
+})
+.catch(console.error);
+```
+
+`apiName`に使用可能なキーワードは下記のとおりです。
+
+* `sessionCreate`
+    => `/api/v1/session.create`
+
+* `sessionAlive` # [セッション要]
+    => `/api/v1/session.alive`
+
+* `userInfo`
+    => `/api/v1/user.info`
+
+* `userPremium` # [セッション要]
+    => `/api/v1/user.premium`
+
+* `achieveSet`
+    => `/api/v1/achieve.set`
+
+* `stepXRanking`
+    => `/api/v1/step.X.ranking`
+
+* `stepXAroundranking`
+    => `/api/v1/step.X.aroundranking`
+
+* `stepXReporter`
+    => `/api/v1/step.X.reporter`
+
+* `stepReportable` # [セッション要]
+    => `/api/v1/step.reportable`
+
+* `communityInfo`
+    => `/api/v1/community.info`
+
+* `communityArray`
+    => `/api/v1/community.array`
+
+* `comunityList` # [セッション要]
+    => `/api/v1/comunity.list`
+
+* `systemUnixtime`
+    => `/api/v1/system.unixtime`
+
+* `blogInfo`
+    => `/api/v1/blog.info`
+
+* `nicoUserMyvideo`
+    => `/nicoapi/v1/user.myvideo`
+
+* `nicoVideoInfo`
+    => `/nicoapi/v1/video.info`
+
+* `nicoVideoArray`
+    => `/nicoapi/v1/video.array`
+
+* `nicoVideoPlay`
+    => `/nicoapi/v1/video.play`
+
+* `nicoVideoPlaylen` # [?]
+    => `/nicoapi/v1/video.playlen`
+
+* `nicoVideoRelation`
+    => `/nicoapi/v1/video.relation`
+
+* `nicoVideoRanking`
+    => `/nicoapi/v1/video.ranking`
+
+* `nicoVideoSherlock`
+    => `/nicoapi/v1/video.sherlock`
+
+* `nicoVideoCeselected`
+    => `/nicoapi/v1/video.ceselected`
+
+* `nicoWiiuRanking`
+    => `/nicoapi/v1/wiiu.ranking`
+
+* `nicoWiiuTrendytag`
+    => `/nicoapi/v1/wiiu.trendytag`
+
+* `nicoMylistgroupGet`
+    => `/nicoapi/v1/mylistgroup.get`
+
+* `nicoDeflistList`
+    => `/nicoapi/v1/deflist.list`
+
+* `nicoDeflistAdd` # [セッション要]
+    => `/nicoapi/v1/deflist.add`
+
+* `nicoMylistList`
+    => `/nicoapi/v1/mylist.list`
+
+* `nicoMylistAdd` # [セッション要]
+    => `/nicoapi/v1/mylist.add`
+
+* `nicoMylistSearch`
+    => `/nicoapi/v1/mylist.search`
+
+* `nicoVideoChannelrecentvideo`
+    => `/nicoapi/v1/video.channelrecentvideo`
+
+* `nicoVideoChannelselected`
+    => `/nicoapi/v1/video.channelselected`
+
+* `nicoVideoSearch`
+    => `/nicoapi/v1/video.search`
+
+* `nicoTagSearch`
+    => `/nicoapi/v1/tag.search`
+
+* `nicoGenreList` # group: 1 を付けるとグループカテゴリー読み込み
+    => `/nicoapi/v1/genre.list`
+
+* `liveInfo`
+    => `/liveapi/v1/video.info`
+
+* `liveArray`
+    => `/liveapi/v1/video.array`
+    
+* `livePlay` # [セッション要]
+    => `/liveapi/v1/video.play`
+
+* `liveOnairlist`
+    => `/liveapi/v1/video.onairlist`
+
+* `liveComingsoon`
+    => `/liveapi/v1/video.comingsoon`
+
+* `liveSearchSolr`
+    => `/liveapi/v1/video.search.solr`
+
+* `liveUserSubscribe` # [セッション要]
+    => `/liveapi/v1/user.subscribe`
 
 License
 ---
