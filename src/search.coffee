@@ -5,18 +5,6 @@ axios= require 'axios'
 api= 'http://api.search.nicovideo.jp/api/'
 
 # Private
-articleFields= [
-  'cmsid'
-  'title'
-  'description'
-  'comment_count'
-  'last_comment_time'
-  'thumbnail_key'
-  'start_time'
-  'update_time'
-  'media_id'
-  'media_name'
-]
 defaultFields= [
   # 共通（counterは一部取得できない）
   'cmsid'
@@ -114,6 +102,12 @@ class Search
 
   illust: (query,request={})->
     request.service= ['illust']
+    unless request.filters?
+      request.filters= []
+      request.filters.push
+        type: 'equal'
+        field: 'illust_type'
+        value: 0
 
     @search query,request
 
@@ -157,11 +151,13 @@ class Search
     request.search?= ['title','body','caption','tags']
     request.filters?= []
 
+    request.join?= defaultFields
+
+    # 'view_counter'が使用できない
     isArticle= request.service[0] in ['channelarticle','news']
     if isArticle
-      request.join?= articleFields
-    else
-      request.join?= defaultFields
+      request.join= request.join?.filter (name)->
+        name isnt 'view_counter'
 
     request.sort_by?= 'start_time'
     request.order?= 'desc'
@@ -196,8 +192,9 @@ class Search
     item.service= service
 
     serviceURL= urls[service]
-    item.url?= serviceURL + item.cmsid
-    item.url= item.url.replace 'comic/_comic','comic/'
+    if serviceURL and not item.url?
+      item.url= serviceURL + item.cmsid
+      item.url= item.url.replace 'comic/_comic','comic/'
     
     # タイトル -> 正規化
     item.title= item.title.replace /&amp;/g,'&' if item.title.replace
@@ -205,7 +202,7 @@ class Search
     # タグ -> 正規化／配列化
     item.tags= item.tags.replace(/&amp;/g,'&').split ' ' if item.tags?.replace
 
-    # 春画 -> 表示
+    # サムネイル -> 拡大（春画表示）
     if item.thumbnail_url?.replace
       item.thumbnail_url= item.thumbnail_url.replace /z$/,'i'
 

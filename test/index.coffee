@@ -7,4 +7,3 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL= 5000
 # Specs
 require './search.spec'
 require './tag.spec'
-require './vita.spec'
