@@ -1,6 +1,6 @@
 {
   "name": "nicovideo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Promise-based search.niconico.jp API wrapper(using MA10 API)",
 
   "main": "lib",

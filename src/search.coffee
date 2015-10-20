@@ -222,7 +222,7 @@ class Search
       item.thumbnail_url= 'http://p.news.nimg.jp/photo/'+item.thumbnail_key+'l.jpg'
 
     # サムネイル拡大
-    if service is 'video'
+    if service is 'video' and item.cmsid.slice(2) >= 16371845
       item.thumbnail_url+= '.L'
 
     item

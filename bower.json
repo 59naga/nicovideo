@@ -1,6 +1,5 @@
 {
   "name": "nicovideo",
-  "description": "Description",
 
   "main": [
     "nicovideo.min.js"
